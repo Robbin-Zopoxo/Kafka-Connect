@@ -1,0 +1,265 @@
+﻿{
+  "type": "record",
+  "name": "Checkout",
+  "namespace": "ShopifySharp",
+  "fields": [
+    {
+      "name": "AbandonedCheckoutUrl",
+      "type": [ "null", "string" ],
+      "default": null
+    },
+    {
+      "name": "BillingAddress",
+      "type": [
+        "null",
+        {
+          "type": "record",
+          "name": "Address",
+          "fields": [
+            {
+              "name": "Address1",
+              "type": [ "null", "string" ],
+              "default": null
+            },
+            {
+              "name": "Address2",
+              "type": [ "null", "string" ],
+              "default": null
+            },
+            {
+              "name": "City",
+              "type": [ "null", "string" ],
+              "default": null
+            },
+            {
+              "name": "Company",
+              "type": [ "null", "string" ],
+              "default": null
+            },
+            {
+              "name": "Country",
+              "type": [ "null", "string" ],
+              "default": null
+            },
+            {
+              "name": "CountryCode",
+              "type": [ "null", "string" ],
+              "default": null
+            },
+            {
+              "name": "CountryName",
+              "type": [ "null", "string" ],
+              "default": null
+            },
+            {
+              "name": "Default",
+              "type": [ "null", "boolean" ],
+              "default": null
+            },
+            {
+              "name": "FirstName",
+              "type": [ "null", "string" ],
+              "default": null
+            },
+            {
+              "name": "LastName",
+              "type": [ "null", "string" ],
+              "default": null
+            },
+            {
+              "name": "Latitude",
+              "type": [ "null", "double" ],
+              "default": null
+            },
+            {
+              "name": "Longitude",
+              "type": [ "null", "double" ],
+              "default": null
+            },
+            {
+              "name": "Name",
+              "type": [ "null", "string" ],
+              "default": null
+            },
+            {
+              "name": "Phone",
+              "type": [ "null", "string" ],
+              "default": null
+            },
+            {
+              "name": "Province",
+              "type": [ "null", "string" ],
+              "default": null
+            },
+            {
+              "name": "ProvinceCode",
+              "type": [ "null", "string" ],
+              "default": null
+            },
+            {
+              "name": "Zip",
+              "type": [ "null", "string" ],
+              "default": null
+            }
+          ]
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "BuyerAcceptsMarketing",
+      "type": [ "null", "boolean" ],
+      "default": null
+    },
+    {
+      "name": "CartToken",
+      "type": [ "null", "string" ],
+      "default": null
+    },
+    {
+      "name": "ClosedAt",
+      "type": [ "null", "string" ],
+      "logicalType": "timestamp-millis",
+      "default": null
+    },
+    {
+      "name": "CompletedAt",
+      "type": [ "null", "string" ],
+      "logicalType": "timestamp-millis",
+      "default": null
+    },
+    {
+      "name": "CreatedAt",
+      "type": [ "null", "string" ],
+      "logicalType": "timestamp-millis",
+      "default": null
+    },
+    {
+      "name": "Currency",
+      "type": [ "null", "string" ],
+      "default": null
+    },
+    {
+      "name": "CustomerLocale",
+      "type": [ "null", "string" ],
+      "default": null
+    },
+    {
+      "name": "DeviceId",
+      "type": [ "null", "long" ],
+      "default": null
+    },
+    {
+      "name": "Email",
+      "type": [ "null", "string" ],
+      "default": null
+    },
+    {
+      "name": "Gateway",
+      "type": [ "null", "string" ],
+      "default": null
+    },
+    {
+      "name": "LandingSite",
+      "type": [ "null", "string" ],
+      "default": null
+    },
+    {
+      "name": "LocationId",
+      "type": [ "null", "long" ],
+      "default": null
+    },
+    {
+      "name": "Note",
+      "type": [ "null", "string" ],
+      "default": null
+    },
+    {
+      "name": "Phone",
+      "type": [ "null", "string" ],
+      "default": null
+    },
+    {
+      "name": "PresentmentCurrency",
+      "type": [ "null", "string" ],
+      "default": null
+    },
+    {
+      "name": "ReferringSite",
+      "type": [ "null", "string" ],
+      "default": null
+    },
+    {
+      "name": "ShippingAddress",
+      "type": [ "null", "Address" ],
+      "default": null
+    },
+    {
+      "name": "SourceName",
+      "type": [ "null", "string" ],
+      "default": null
+    },
+    {
+      "name": "SubtotalPrice",
+      "type": [ "null", "double" ],
+      "default": null
+    },
+    {
+      "name": "TaxesIncluded",
+      "type": [ "null", "boolean" ],
+      "default": null
+    },
+    {
+      "name": "Token",
+      "type": [ "null", "string" ],
+      "default": null
+    },
+    {
+      "name": "TotalDiscounts",
+      "type": [ "null", "double" ],
+      "default": null
+    },
+    {
+      "name": "TotalDuties",
+      "type": [ "null", "double" ],
+      "default": null
+    },
+    {
+      "name": "TotalLineItemsPrice",
+      "type": [ "null", "double" ],
+      "default": null
+    },
+    {
+      "name": "TotalPrice",
+      "type": [ "null", "double" ],
+      "default": null
+    },
+    {
+      "name": "TotalTax",
+      "type": [ "null", "double" ],
+      "default": null
+    },
+    {
+      "name": "TotalWeight",
+      "type": [ "null", "double" ],
+      "default": null
+    },
+    {
+      "name": "UpdatedAt",
+      "type": [ "null", "string" ],
+      "logicalType": "timestamp-millis",
+      "default": null
+    },
+    {
+      "name": "CreationTime",
+      "type": [ "null", "string" ],
+      "logicalType": "timestamp-millis",
+      "default": null
+    },
+    {
+      "name": "UserId",
+      "type": [ "null", "long" ],
+      "default": null
+    }
+  ]
+}
