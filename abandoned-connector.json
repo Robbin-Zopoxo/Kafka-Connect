@@ -1,0 +1,38 @@
+{
+  "name": "abandoned-connector",
+  "config": {
+    "connector.class": "io.confluent.connect.jdbc.JdbcSinkConnector",
+    "tasks.max": "1",
+    "topics": "zopoxo-abandonedCheckout",
+    "connection.url": "jdbc:sqlserver://localhost:1433;databaseName=Acer;encrypt=true;trustServerCertificate=true;",
+    "connection.user": "MK",
+    "connection.password": "123qwe",
+    "insert.mode": "insert",
+    "key.converter.schema.registry.url": "http://schema-registry:8081",
+    "value.converter.schema.registry.url": "http://schema-registry:8081",
+    "key.converter": "org.apache.kafka.connect.storage.StringConverter",
+    "value.converter": "io.confluent.connect.avro.AvroConverter",
+    "key.converter.schemas.enable": "false",
+    "value.converter.schemas.enable": "true",
+    "table.name.format": "AbandonedCheckout",
+    "auto.evolve": "true",
+    "pk.mode": "none",
+    "transforms": "TimestampConverter,CreatedAtTimestampConverter,UpdatedAtTimestampConverter",
+
+    "transforms.TimestampConverter.type": "org.apache.kafka.connect.transforms.TimestampConverter$Value",
+    "transforms.TimestampConverter.target.type": "Timestamp",
+    "transforms.TimestampConverter.field": "CreationTime",
+
+    "transforms.CreatedAtTimestampConverter.type": "org.apache.kafka.connect.transforms.TimestampConverter$Value",
+    "transforms.CreatedAtTimestampConverter.target.type": "Timestamp",
+    "transforms.CreatedAtTimestampConverter.field": "CreatedAt",
+
+    "transforms.UpdatedAtTimestampConverter.type": "org.apache.kafka.connect.transforms.TimestampConverter$Value",
+    "transforms.UpdatedAtTimestampConverter.target.type": "Timestamp",
+    "transforms.UpdatedAtTimestampConverter.field": "UpdatedAt"
+
+
+    
+    
+  }
+}
